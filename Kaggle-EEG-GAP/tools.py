@@ -25,6 +25,14 @@ def prepare_data_train(subject_id, series_id):
     return data, labels
 
 def prepare_data_test(subject_id, series_id):
+    """
+        read and prepare test data frame
+        @params: 
+            subject_id: subject number
+            series_id: the series number
+        @return:
+            data
+    """
     data = pd.read_csv('./data/test/subj' + str(subject_id) + '_series' + str(series_id) + '_data.csv')
     return data
 
