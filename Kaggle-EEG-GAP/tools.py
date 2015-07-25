@@ -39,7 +39,7 @@ def data_preprocess_train(X):
     return X_prep
 
 def data_preprocess_test(X):
-    X_prep = scaler.tranform(X)
+    X_prep = scaler.transform(X)
 
     # preprocessing here
 
